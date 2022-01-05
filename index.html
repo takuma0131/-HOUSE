@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js" defer></script>
     <link rel="shortcut icon" href="./images/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,42 +28,51 @@
           <img src="./images/logo.svg" alt="明るいHOUSE" />
         </a>
       </h1>
-      <nav>
-        <ul>
-          <li>
-            <a href="#"> 私たちについて </a>
-          </li>
-          <li>
-            <a href="#">サービス</a>
-          </li>
-          <li>
-            <a href="#">商品情報</a>
-          </li>
-          <li>
-            <a href="#">展示会</a>
-          </li>
-          <li>
-            <a href="#">暮らしの日記</a>
-          </li>
-          <li>
-            <a href="#">会社概要</a>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <a href="https://twitter.com" target="_blank">Twitter</a>
-          </li>
-          <li>
-            <a href="https://www.facebook.com" target="_blank">facebook</a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com" target="_blank">instagram</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="hamburger-menu">
-        <input type="checkbox" id="menu-btn-check" />
-        <label for="menu-btn-check" class="menu-btn"><span></span></label>
+      <div id="navArea">
+        <nav>
+          <div class="inner">
+            <ul>
+              <li>
+                <a href="#"> 私たちについて </a>
+              </li>
+              <li>
+                <a href="#">サービス</a>
+              </li>
+              <li>
+                <a href="#">商品情報</a>
+              </li>
+              <li>
+                <a href="#">展示会</a>
+              </li>
+              <li>
+                <a href="#">暮らしの日記</a>
+              </li>
+              <li>
+                <a href="#">会社概要</a>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a href="https://twitter.com" target="_blank">Twitter</a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com" target="_blank">facebook</a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com" target="_blank"
+                  >instagram</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="toggle_btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div id="mask"></div>
       </div>
     </header>
   </body>
